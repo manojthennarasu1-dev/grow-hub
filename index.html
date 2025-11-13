@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowHub Gardening </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-seedling"></i> GrowHub
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="myPlants.html">Add Plant</a>
+            <a href="Watering.html">Care Tasks</a>
+            <a href="Settings.html">Settings</a>
+        </nav>
+    </header>
+    <aside>
+        <ul>
+            <li><i class="fa-solid fa-table-cells-large"></i> <a href="overview.html">Dashboard</a></li>
+            <li><i class="fa-solid fa-seedling"></i> <a href="myPlants.html">My Plants</a></li>
+            <li><i class="fa-solid fa-droplet"></i> <a href="Watering.html">Watering</a></li>
+            <li><i class="fa-solid fa-calendar-check"></i> <a href="Reminders.html">Reminders</a></li>
+            <li><i class="fa-solid fa-gear"></i> <a href="Settings.html">Settings</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="overview">
+            <h2>My Garden Overview</h2>
+            <div class="stats">
+                <div><span>7</span> Total Plants</div>
+                <div><span>2</span> Needs Watering</div>
+                <div><span>5</span> Healthy</div>
+                <div><span>1</span> Needs Attention</div>
+            </div>
+        </section>
+
+        <section class="plant-cards">
+            <h2>Plants</h2>
+            <div class="plant-grid">
+                <div class="plant-card">
+                    <i class="fa-solid fa-pagelines"></i>
+                    <h3>Peace Lily</h3>
+                    <p>Water every 3 days</p>
+                    <p class="status">Last watered: 2 days ago</p>
+                </div>
+                <div class="plant-card">
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <h3>Money Plant</h3>
+                    <p>Water every week</p>
+                    <p class="status">Last watered: 6 days ago</p>
+                </div>
+                <div class="plant-card">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Snake Plant</h3>
+                    <p>Water twice a week</p>
+                    <p class="status">Last watered: 1 day ago</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="watering-schedule">
+            <h2>Weekly Watering</h2>
+            <div class="watering-table">
+                <div>Peace Lily: <span class="watering-indicator done"></span><span
+                        class="watering-indicator"></span><span class="watering-indicator"></span></div>
+                <div>Money Plant: <span class="watering-indicator done"></span><span
+                        class="watering-indicator done"></span><span class="watering-indicator"></span></div>
+                <div>Snake Plant: <span class="watering-indicator done"></span><span
+                        class="watering-indicator"></span><span class="watering-indicator"></span></div>
+            </div>
+        </section>
+
+        <section class="reminders">
+            <h2>Reminders</h2>
+            <ul>
+                <li>Water Money Plant tomorrow.</li>
+                <li>Repot Snake Plant on Sunday.</li>
+                <li>Check Peace Lily for pests Thursday.</li>
+            </ul>
+        </section>
+
+        <section class="notes">
+            <h2>Notes</h2>
+            <textarea placeholder="Add your gardening notes here..."></textarea>
+        </section>
+        <section class="quick-tasks">
+            <h2>Quick Actions</h2>
+            <button>Add New Plant</button>
+            <button>Mark Plant Watered</button>
+            <button>Export Data</button>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 GrowHub. All rights reserved by marvelmanoj.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+ body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background: #f3f6fc;
+}
+header {
+    width: 100%;
+    background: #348d4c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.logo {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.main-nav a {
+    color: #fff;
+    margin-left: 2em;
+    text-decoration: none;
+    font-weight: 500;
+}
+aside {
+    width: 200px;
+    background: #fff;
+    box-shadow: 2px 0 9px #ddd;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    padding: 2em 1em;
+}
+aside ul {
+    padding: 0;
+    list-style: none;
+     
+}
+aside li {
+    padding: 1em 0;
+    color: #348d4c;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+aside li i {
+    margin-right: 1em;
+}
+main {
+    margin-left: 220px;
+    margin-top: 70px;
+    padding: 2em;
+    flex: 1;
+}
+section {
+    background: #fff;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px #edf1f6;
+}
+.stats {
+    display: flex;
+    gap: 2em;
+}
+.stats div {
+    background: #e5f6ea;
+    color: #229046;
+    padding: 1em 2em;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.plant-grid {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+.plant-card {
+    background: #e5f6ed;
+    border: 1px solid #d3efe0;
+    border-radius: 8px;
+    padding: 1em;
+    width: 240px;
+    text-align: center;
+}
+.plant-card i {
+    font-size: 2em;
+    color: #229046;
+}
+.status {
+    color: #666;
+    font-size: 0.95em;
+}
+.watering-table div {
+    margin: 0.5em 0;
+}
+.watering-indicator {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #d3efe0;
+}
+.watering-indicator.done {
+    background: #229046;
+}
+.notes textarea {
+    width: 100%;
+    min-height: 80px;
+    border-radius: 6px;
+    border: 1px solid #d3efe0;
+    padding: 10px;
+    font-size: 1em;
+}
+.quick-tasks button {
+    margin: 0.5em;
+    padding: 0.7em 1.5em;
+    background: #229046;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.quick-tasks{
+    margin-bottom: 70px;
+}
+footer {
+    width: 100%;
+    background: #348d4c;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+@media (max-width: 800px) {
+    aside {
+        display: none;
+    }
+    main {
+        margin-left: 0;
+    }
+}

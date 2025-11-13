@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GrowHub Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="auth-container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label for="reg-username">Username</label>
+      <input type="text" id="reg-username" required>
+      <label for="reg-password">Password</label>
+      <input type="password" id="reg-password" required>
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+    <div id="reg-message"></div>
+  </main>
+  <script>
+    document.getElementById('registerForm').onsubmit = function(e) {
+      e.preventDefault();
+      let username = document.getElementById('reg-username').value;
+      let password = document.getElementById('reg-password').value;
+      localStorage.setItem('growhubUser', username);
+      localStorage.setItem('growhubPass', password);
+      document.getElementById('reg-message').textContent = "Registration successful!";
+      setTimeout(() => window.location.href = "login.html", 1200);
+    }
+  </script>
+</body>
+</html>

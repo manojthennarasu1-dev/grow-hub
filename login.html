@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GrowHub Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="auth-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="log-username">Username</label>
+      <input type="text" id="log-username" required>
+      <label for="log-password">Password</label>
+      <input type="password" id="log-password" required>
+      <button type="submit">Login</button>
+      <p>Don’t have an account? <a href="register.html">Register</a></p>
+    </form>
+    <div id="log-message"></div>
+  </main>
+  <script>
+    document.getElementById('loginForm').onsubmit = function(e) {
+      e.preventDefault();
+      let username = document.getElementById('log-username').value;
+      let password = document.getElementById('log-password').value;
+      if(username === localStorage.getItem('growhubUser') && password === localStorage.getItem('growhubPass')) {
+        sessionStorage.setItem('growhubLogged', 'yes');
+        window.location.href = "index.html";
+      } else {
+        document.getElementById('log-message').textContent = "Incorrect username or password!";
+      }
+    }
+  </script>
+</body>
+</html>
